@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="page">
+            <address class="mb-3">
+                {% for i in line[1].split(',') %}
+                    {{ i }},<br>
+                {% endfor %}
+            </address>
+            <div class="date mb-3">
+                7th May 2022
+            </div>
+            <div class="greeting mb-3">
+                 Dear {{ line[0] }},
+
+            </div>
+            <div class="content mb-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum rerum provident accusamus numquam
+                autem ducimus soluta voluptatibus facere corporis pariatur qui, sit architecto magnam sequi ullam
+                eveniet quod nobis! Repellendus pariatur doloribus nihil blanditiis error tempora deleniti eaque porro
+                ullam reiciendis mollitia debitis ipsa eos quisquam earum, excepturi rerum in! Aperiam id ad dolorem
+                sapiente aliquid cupiditate repellendus suscipit, iure, laboriosam assumenda aut illo nesciunt omnis ab
+                error ipsa autem neque atque ipsum quae magnam rerum? Aut consequatur harum molestiae impedit
+                architecto. Perferendis fugit quas nemo voluptas ipsum eveniet, ipsa optio totam laborum maiores quae
+                aut maxime voluptatibus eos reiciendis magni repudiandae quis laudantium consequatur praesentium.
+                Dignissimos, quasi? Neque, vero nam fuga totam id sapiente iure, modi numquam sequi a molestias esse
+                tempora illo ex vel quas dolorum autem porro earum consequuntur molestiae voluptatem velit et saepe.
+                Suscipit reiciendis itaque est dolorem maxime ullam nulla ad ea eum? Aliquid molestias modi maxime
+                ducimus, voluptatem expedita quaerat quidem rem quos, quibusdam placeat qui quas in! In maxime illum
+                temporibus. Sequi veritatis temporibus eum tempora, libero voluptas totam odio, asperiores molestiae
+                maxime itaque quas dolorum voluptates officiis velit quia beatae sapiente obcaecati magni, rem quaerat
+                veniam et earum? Ratione eos doloremque facilis.
+            </div>
+            <div class="salutation mb-3">
+                With love,<br>
+                {{ line[2] }}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
